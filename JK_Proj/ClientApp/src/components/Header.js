@@ -1,7 +1,8 @@
 ﻿import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
-import heroUrl from '../img/hero.jpg';
 import canUrl from '../img/cans.png';
+
 
 
 export class Header extends React.Component {
@@ -14,9 +15,20 @@ export class Header extends React.Component {
     render() {
         return (
             <div>
-            <img class="Header" src={heroUrl} alt="Header" />
-            <img class="Center" src={canUrl} alt="Cans" />
-</div>
-                );
+
+                <div class="cat">
+                    <div class="text">
+                        <h1>Say Bye</h1>
+                        <p>To basic seltzering</p>
+                        <Link to="/FindLocation">
+                            <button type="button">
+                                Find Near You
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+                <img class="Center" src={canUrl} alt="Cans" />
+            </div>
+        );
     }
 }
