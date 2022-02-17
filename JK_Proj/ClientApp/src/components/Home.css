@@ -1,0 +1,10 @@
+﻿.flex-container {
+    display: flex;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+img {
+    width: 100%;
+
+}

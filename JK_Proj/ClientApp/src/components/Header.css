@@ -1,0 +1,15 @@
+﻿.Header {
+    width: 100%;
+    height: auto;
+}
+
+.Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.Center:hover{
+    transform:scale(1.25);
+}
