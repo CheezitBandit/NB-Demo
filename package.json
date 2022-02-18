@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-native": "^0.67.2"
+    "react-native": "^0.67.2",
+    "reactjs-popup": "^2.0.5"
   }
 }

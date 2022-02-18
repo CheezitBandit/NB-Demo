@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
+import Popup from 'reactjs-popup';
 import packUrl from '../img/pack.jpg';
-import './Home.css';
+import '../styling/Home.css';
 
-export class Home extends Component {
-  static displayName = Home.name;
-
-  render () {
+function Home() {
     return (
-      <div class="flex-container">
+        <div class="flex-container">
             <div>
-                <h1>SUPER HARD VARIETY PACK</h1>
-                <p>Introducing <b> The New </b> Fruit Smash Super Hard Seltzer. A boozy seltzer made with real juice for a bolder taste that packs a punch.</p>
+                <h2>SUPER HARD <br /> VARIETY PACK</h2>
+                <p>Introducing <strong>The New</strong> Fruit Smash Super Hard Seltzer. A boozy seltzer made with real juice for a bolder taste that packs a punch.</p>
+                <Popup trigger={<button>LEARN MORE >>></button>}
+                    modal
+                    position="center">
+                    {close => (
+                        <div>Text goes here</div>
+                    )}
+                </Popup>
             </div>
             <div>
                 <img src={packUrl} alt="Pack" />
             </div>
-      </div>
+        </div>
     );
-  }
-}
+};
+
+export default Home;

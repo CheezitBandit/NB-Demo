@@ -1,9 +1,6 @@
 ﻿import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
-import canUrl from '../img/cans.png';
-
-
+import '../styling/Header.css';
 
 export class Header extends React.Component {
     static displayName = Header.name;
@@ -14,20 +11,16 @@ export class Header extends React.Component {
 
     render() {
         return (
-            <div>
-
-                <div class="cat">
-                    <div class="text">
-                        <h1>Say Bye</h1>
-                        <p>To basic seltzering</p>
-                        <Link to="/FindLocation">
-                            <button type="button">
-                                Find Near You
-                            </button>
-                        </Link>
-                    </div>
+            <div class="cat">
+                <div class="text">
+                    <h1>SAY BYE</h1>
+                    <h2>TO BASIC SELTZERING</h2>
+                    <Link to="/FindLocation">
+                        <button type="button">
+                            FIND NEAR YOU >>>
+                        </button>
+                    </Link>
                 </div>
-                <img class="Center" src={canUrl} alt="Cans" />
             </div>
         );
     }

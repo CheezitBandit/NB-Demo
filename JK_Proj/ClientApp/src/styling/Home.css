@@ -2,9 +2,9 @@
     display: flex;
     align-items: baseline;
     align-content: space-between;
+    margin-bottom: 100px;
 }
 
 img {
     width: 100%;
-
 }
